@@ -13,3 +13,15 @@ if (!function_exists('neve_child_load_css')) :
 	}
 endif;
 add_action('wp_enqueue_scripts', 'neve_child_load_css', 20);
+
+// function that runs when shortcode is called
+function private_dashboard()
+{
+	$message = 'Hello world!';
+	echo get_edit_profile_url();
+	//echo get_currentuserinfo();
+
+	return $message;
+}
+// register shortcode
+add_shortcode('private_dashboard', 'private_dashboard');
