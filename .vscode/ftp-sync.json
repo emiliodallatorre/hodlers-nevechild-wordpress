@@ -1,0 +1,27 @@
+{
+    "remotePath": "/var/www/html/wp-content/themes/hodlers-nevechild-wordpress",
+    "host": "hodlersclub.it",
+    "username": "emiliodallatorre",
+    "password": "Iegh4Aip7aib9uahooyi",
+    "port": 22,
+    "secure": false,
+    "protocol": "sftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
