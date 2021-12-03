@@ -25,3 +25,14 @@ function private_dashboard()
 }
 // register shortcode
 add_shortcode('private_dashboard', 'private_dashboard');
+
+function menu_by_login_status($args = '')
+{
+	if (is_user_logged_in()) {
+		$args['menu'] = 'principale-logged';
+	} else {
+		$args['menu'] = 'principale';
+	}
+	return $args;
+}
+add_filter('wp_nav_menu_args', 'menu_by_login_status');
