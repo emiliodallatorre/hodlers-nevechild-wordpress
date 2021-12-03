@@ -36,3 +36,12 @@ function menu_by_login_status($args = '')
 	return $args;
 }
 add_filter('wp_nav_menu_args', 'menu_by_login_status');
+
+function hide_private_posts($query)
+{
+	if ($query->is_home) {
+		$query->set('cat', '-15');
+	}
+	return $query;
+}
+add_filter('pre_get_posts', 'hide_private_posts');
